@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:parkdark/authScreens/auth_screen.dart';
 import 'package:parkdark/mainScreens/home_screen.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: Colors.black,
       ),
-      home: const HomeScreen(),
+      home: const AuthScreen(),
     );
   }
 }

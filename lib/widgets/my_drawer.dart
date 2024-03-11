@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:parkdark/mainScreens/home_screen.dart';
 import 'package:parkdark/mainScreens/location.dart';
 
@@ -115,13 +116,12 @@ class MyDrawer extends StatelessWidget {
                         color: Colors.white,
                       ),
                       title: const Text(
-                        "Системээс гарах",
+                        "Программыг хаах",
                         style: TextStyle(fontFamily: "Oswald-Regular"),
                       ),
                       onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (c) => const HomeScreen()));
-                      },
+                        SystemNavigator.pop();
+                      }, 
                     ),
                   ],
                 ),
